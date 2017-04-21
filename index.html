@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>PcDoctor</title>
+    <style>
+        @import url(css/main.css);
+    </style>
+</head>
+
+<body>
+    <div id="body">
+        <aside id="aside" class="dragable">
+            <ul>
+                <li><a id="index" class="section" href="###"><i class="i">&#xe601;</i></a></li>
+                <!-- <li><a href="###"><i class="i">&#xe603;<span class="menu-t">首页体检</span></i></a></li> -->
+                <li><a id="virus" class="section" href="###"><i class="i">&#xe612;<span class="menu-t">病毒查杀</span></i></a></li>
+                <li><a id="trash" class="section" href="###"><i class="i">&#xe604;<span class="menu-t">垃圾清理</span></i></a></li>
+                <li><a id="leak" class="section" href="###"><i class="i">&#xe615;<span class="menu-t">漏洞修复</span></i></a></li>
+                <li><a id="soft" class="section" href="###"><i class="i">&#xe602;<span class="menu-t">软件管理</span></i></a></li>
+                <li><a id="tools" class="section" href="###"><i class="i">&#xe606;<span class="menu-t">常用工具</span></i></a></li>
+                <li><a id="settings" class="section" href="###"><i class="i">&#xe600;<span class="menu-t">系统设置</span></i></a></li>
+            </ul>
+            <a id="minify" class="minify" href="#"><i class="i">&#xe60d;</i></a>
+        </aside>
+        <header id="header" class="dragable">
+            <ul>
+                <li><span id="title" class="menu-t">PC Doctor</span></li>
+                <li><a id="closeWin" href="###"><i class="i">&#xe608;</i></a></li>
+                <li><a id="minifyWin" href="###"><i class="i">&#xe60a;</i></a></li>
+                <li><a id="sysMenu" href="###"><i class="i">&#xe609;</i></a></li>
+                <li><a id="" href="###"><i class="i">&#xe600;</i></a></li>
+                <!-- <li><a href="###"><i class="i">&#xe605;</i></a></li> -->
+            </ul>
+            <div class="modal-bg"></div>
+            <!-- <a class="title" href="#">Pc Doctor</a> -->
+        </header>
+        <div id="container" class="container">
+            <!-- <section class="red">
+                1=init
+            </section> -->
+            <section data-tag="index">
+                <div class="health-panel">
+                    <div class="health-status"><i class="i">&#xe611;</i></div>
+                    <div class="health-info">
+                        <p class="title">
+                            您的电脑很健康，请继续保持！
+                        </p>
+                        <p class="des">
+                            PcDocter 已经保护您的电脑365天！
+                        </p>
+                    </div>
+                    <div class="health-detail">
+                        <a href="###" id="testNnow" class="detail-now">立即体检</a>
+                    </div>
+                </div>
+                <div class="shortcut-panel cf">
+                    <ul>
+                        <li><a href="###"><i class="i">&#xe612;</i><span>快速扫描</span></a></li>
+                        <li><a href="###"><i class="i">&#xe615;</i><span>漏洞修复</span></a></li>
+                        <li><a href="###"><i class="i">&#xe607;</i><span>电脑加速</span></a></li>
+                        <li><a href="###"><i class="i">&#xe602;</i><span>软件管理</span></a></li>
+                    </ul>
+                </div>
+                <div class="home-info">
+                </div>
+                <div class="fix-bottom-menu">
+                    <ul class="virus-tool-part">
+                        <li><a href="##" class="virus-tips-des">隔离区(12)</a></li>
+                        <li><span>丨</span></li>
+                        <li><a href="##" class="virus-tips-des">信任区(8)</a></li>
+                        <li><span>丨</span></li>
+                        <li><a href="##" class="virus-tips-des">查杀日志</a></li>
+                    </ul>
+                    <a href="##" class="cloud-sec-center"><i class="i">&#xe619;</i> 已连接到金山云安全中心</a>
+                </div>
+            </section>
+            <section data-tag="virus" data-status="normal">
+                <div class="virus-contianer">
+                    <div id="virusModule" class="virus-module">
+                        <div class="virus-info">
+                            <!--<div class="virus-state">-->
+                            <div id="scanDetail" class="scan-detail">
+                                <div id="ScanTime" class="state-img">
+                                    <!--<img src="images/virus/logo.png" alt="">-->
+                                    <a href="##" class="scan-ani"><i class="i">&#xe630;</i>
+                                </a>
+                                    <span id="scan-time" class="scan-time">00:00</span>
+
+                                </div>
+                                <div class="state-info">
+                                    <p id="virus-title" class="title">
+                                        正在进行全盘杀毒...
+                                    </p>
+                                    <p id="QuickScanPath" class="des">
+                                    </p>
+                                </div>
+                                <div class="scan-control" style="display: block;">
+
+                                    <ul>
+                                        <li><button id="scan-pause" data-status="normal" class="control-btn"> 暂 停 </button></li>
+                                        <li><button id="scan-stop" class="control-btn"> 停 止 </button></li>
+                                        <li><button id="scan-repair" class="control-btn hide"> 立即修复 </button></li>
+                                        <li><button id="scan-repair-no" class="control-btn hide"> 暂不处理 </button></li>
+                                        <li><button id="scan-re-start" class="control-btn hide"> 重新扫描 </button></li>
+                                        <li><button id="scan-return" class="control-btn hide"> 返回 </button></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!--</div>-->
+                            <!--<div class="scan-state"></div>-->
+                            <div id="progress" class="progress">
+                                <div id="progress-now" class="progress-now"></div>
+                            </div>
+                        </div>
+                        <div id="startScanContainer" class="start-scan-container hi-icon-effect-8">
+                            <!--<a href="##" class="start-scan">快速扫描</a>-->
+                            <a href="##" id="scanFullDisk" class="hi-icon">全盘扫描</a>
+                            <a href="##" id="scanSystem" class="hi-icon">快速扫描</a>
+                            <a href="##" id="scanCustom" class="hi-icon">自定义扫描</a>
+                        </div>
+                        <!--<div class="virus-control">
+                        </div>-->
+                    </div>
+                    <div id="detailModule" class="detail-module">
+                        <div id="scanInfo" class="scan-info">
+                            <a href="##" id="virus-tips" class="virus-tips"><i class="i">&#xe621;</i> 受保护中</a>
+                            <a href="##" class="virus-tips-des"> PC Doctor 已经实时保护您的电脑 365 天！</a>
+                            <div class="fix-bottom-menu">
+                                <ul class="virus-tool-part">
+                                    <li><a href="##" class="virus-tips-des">隔离区(12)</a></li>
+                                    <li><span>丨</span></li>
+                                    <li><a href="##" class="virus-tips-des">信任区(8)</a></li>
+                                    <li><span>丨</span></li>
+                                    <li><a href="##" class="virus-tips-des">查杀日志</a></li>
+                                </ul>
+                                <a href="##" class="cloud-sec-center"><i class="i">&#xe619;</i> 已连接到金山云安全中心</a>
+                            </div>
+                        </div>
+                        <div id="scanResult" class="scan-result">
+                            <div id="detail-page" class="detail-page">
+                                <div class="detail-info-container">
+                                    <span id="fixResTag" class="tag">全盘杀毒</span>
+                                    <div class="detail-title"><i class="i">&#xe621;</i><span id="fixRes"></span></div>
+
+                                    <div class="detail-left">
+                                        <i class="i">&#xe620;</i>
+                                    </div>
+                                    <div class="detail-right">
+                                        <ul>
+                                            <li>扫描对象：</li>
+                                            <li>共计用时：</li>
+                                            <li>清除威胁：</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="##" class="virus-scan-res-title"><input disabled type="checkbox" checked class="hide" id="checkAll" name="virusItem[]" value="" disabled><label for="checkAll"></label><i class="i">&#xe615;</i> 发现风险<span class="res-des">发现 <span id="virus-num" class="mark-num">0</span>个风险，请及时进行处理，防止感染。</span>
+                            </a>
+                            <ul id="resList">
+                                <h5 style="text-align: center;color: #72727f;font-weight: 400;">正在查杀，暂未发现威胁···</h5>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--Custom Path Start-->
+                <div id="custom-path" class="custom-path">
+                    <!--<header>-->
+                    <div class="custom-header cf">
+                        <span class="header-title">请选择查杀位置</span>
+                        <ul class="custom-menu">
+                            <li><a href="##" id="custom-close"><i class="i">&#xe608;</i></a></li>
+                        </ul>
+                    </div>
+
+                    <!--</header>-->
+                    <div class="path-container">
+                        <div class="custom-section hinge">
+                            <h4>关键位置</h4>
+                            <ul class="opt-container">
+                                <li><input checked type="checkbox" class="hide" id="a1" name="a1" value=""><label for="a1">系统内存</label></li>
+                                <li><input checked type="checkbox" class="hide" id="a2" name="a2" value=""><label for="a2">系统启动项</label></li>
+                                <li><input checked type="checkbox" class="hide" id="a3" name="a3" value=""><label for="a3">被劫持系统文件</label></li>
+                                <li><input checked type="checkbox" class="hide" id="a4" name="a4" value=""><label for="a4">系统设置和IE设置</label></li>
+                                <li><input checked type="checkbox" class="hide" id="a5" name="a5" value=""><label for="a5">常用软件</label></li>
+                            </ul>
+                        </div>
+                        <div class="custom-section common">
+                            <h4>常用位置</h4>
+                            <ul id="treeSelect" class="opt-container">
+                                <!--<li>
+                                <input type="checkbox" class="hide" id="b1" name="b1" value=""><label for="b1"></label><a href="###">盘符1 >> C:</a>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" class="hide" id="b1" name="b1" value=""><label for="b1"></label><a href="###">盘符2 > C:</a>
+                                        <ul>
+                                            <li><input type="checkbox" class="hide" id="b1" name="b1" value=""><label for="b1"></label><a href="###">盘符3 > C:</a></li>
+                                            <li><input type="checkbox" class="hide" id="b1" name="b1" value=""><label for="b1"></label><a href="###">盘符3 > C:</a></li>
+                                            <li><input type="checkbox" class="hide" id="b1" name="b1" value=""><label for="b1"></label><a href="###">盘符3 > C:</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><input type="checkbox" class="hide" id="b1" name="b1" value=""><label for="b1"></label><a href="###">盘符2 > C:</a></li>
+                                    <li><input type="checkbox" class="hide" id="b1" name="b1" value=""><label for="b1"></label><a href="###">盘符2 > C:</a></li>
+                                </ul>
+                            </li>
+                            <li><input type="checkbox" class="hide" id="b2" name="b2" value=""><label for="b2"></label><a href="###">盘符1 > C:</a></li>
+                            <li><input type="checkbox" class="hide" id="b3" name="b3" value=""><label for="b3"></label><a href="###">盘符1 > C:</a></li>-->
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="###" id="Start" class="custom-btn btn-start">开始杀毒</a>
+
+                </div>
+                <div class="modal-bg">正在读取磁盘数据，请稍后...</div>
+
+                <!--Custom Path End-->
+
+            </section>
+            <section class="gray" data-tag="trash">
+                3
+            </section>
+            <section class="blue" data-tag="leak">
+                4
+            </section>
+            <section class="orange" data-tag="soft">
+                5
+            </section>
+            <section class="gray" data-tag="tools">
+                6
+            </section>
+            <section class="blue" data-tag="settings">
+                7
+            </section>
+        </div>
+        <div id="modal-bg" class="modal-bg"></div>
+
+    </div>
+    <script type="text/javascript" src="js/common/generate-res.js" charset="UTF-8"></script>
+</body>
+
+</html>

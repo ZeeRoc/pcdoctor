@@ -1,0 +1,128 @@
+body {
+    /*background-color: #fff;*/
+    /*background-color: rgba(0, 0, 0, .25);*/
+    box-shadow: 0px 0px 10px 0px lightgray;
+    margin: 10px;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.pop {
+    font-family: "Ms Yahei";
+    -webkit-app-region: drag;
+    background-color: #fff;
+    /*border-radius: 4px;*/
+    /*padding: 2%;*/
+}
+
+.pop-header {
+    padding: 0 2%;
+    color: #fff;
+    background: #D70101;
+}
+
+.pop-title {
+    font: 400 12px/30px 'Ms Yahei';
+    /*border-bottom: 1px solid lightgray;*/
+}
+
+.pop-close {
+    float: right;
+    color: #fff;
+}
+
+.pop-banner {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.pop-v-info {
+    list-style: none;
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.pop-v-info .pop-tips {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    /*line-height: 60px;*/
+}
+
+.pop-v-info .pop-success-key {
+    color: #00c37c;
+}
+
+.pop-v-info .pop-warning-key {
+    color: #D70101;
+}
+
+.pop-v-info .pop-normal-key {
+    color: #adadad;
+}
+
+.pop-body {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.pop-operation {
+    padding: 12px 6px;
+    float: right;
+}
+
+.pop-btn {
+    display: inline-block;
+    border: 1px solid #e5e5e5;
+    font-size: 12px;
+    padding: 6px 16px;
+    color: #000;
+}
+
+
+/*
+.pop-dropdown .pop-btn {
+    position: relative;
+}*/
+
+.pop-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.pop-dropdown .pop-dropdown-list {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: -51px;
+    border: 1px solid #e5e5e5;
+    /*display: none;*/
+    background-color: #fff;
+}
+
+.pop-dropdown .pop-dropdown-item {
+    font-size: 12px;
+    color: #000;
+    line-height: 25px;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 6px 18px;
+}
+
+.pop-dropdown li:last-child .pop-dropdown-item {
+    border: none;
+}
+
+.pop-dropdown li {
+    display: block;
+}
+
+.pop-dropdown .pop-btn::after {
+    content: " \25B2";
+}
+
+.pop-footer {
+    /*height: 200px;*/
+    width: 100%;
+}

@@ -1,2 +1,0 @@
-# pcdoctor
-client by nw

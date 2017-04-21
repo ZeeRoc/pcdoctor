@@ -1,0 +1,42 @@
+.f-l {
+    float: left;
+}
+
+.f-r {
+    float: right;
+}
+
+.btn {
+    padding: 12px 32px;
+    /*border:1px solid red;*/
+    display: block;
+    text-align: center;
+}
+
+.btn.btn-success {
+    background-color: rgba(0, 195, 125, 1);
+}
+
+.white {
+    background-color: #fff;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.gray {
+    background-color: gray;
+}
+
+.hide {
+    display: none;
+}

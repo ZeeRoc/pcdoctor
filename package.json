@@ -1,0 +1,26 @@
+{
+    "name": "pcdoctor",
+    "version": "1.0.0",
+    "description": "kingsoft security anti-virus software",
+    "main": "index.html",
+    "scripts": {
+        "start": "nw"
+    },
+    "keywords": [
+        "pcdoctor"
+    ],
+    "author": "zhangpeng",
+    "license": "MIT",
+    "window": {
+        "title": "Nw.js Demo",
+        "icon": "images/virus/logo.png",
+        "position": "center",
+        "width": 900,
+        "height": 600,
+        "toolbar": false,
+        "frame": false,
+        "resizable": false,
+        "min_width": 900,
+        "show_in_taskbar": true
+    }
+}

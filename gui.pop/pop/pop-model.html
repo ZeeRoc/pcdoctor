@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../css/init.css" rel="stylesheet">
+    <link href="../../css/icons.css" rel="stylesheet">
+    <link href="css/pop-model.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="pop">
+        <div class="pop-header">
+            <div class="pop-title">
+                <a href="##" id="pop-close" class="pop-close"><i class="i">&#xe608;</i></a>
+                <span class="pop-name"><i class="i">&#xe626;</i> PcDoctor - 文件拦截</span>
+            </div>
+            <div class="pop-banner">
+                <i class="i">&#xe626;</i> 发现恶意木马，建议您立即清除！
+            </div>
+        </div>
+        <div class="pop-body">
+            <ul class="pop-v-info">
+                <li style="display: none;">病毒名称：<span id="v-id" class="pop-warning-key">Win32.Test.Eicar.a.bav</span></li>
+                <li>病毒名称：<span id="v-type" class="pop-warning-key">Win32.Test.Eicar.a.bav</span></li>
+                <li>病毒路径：<span id="v-path" class="pop-normal-key">H:\PcDoctor\bin</span></li>
+                <li>风险名称：<span id="v-name" class="pop-normal-key">explorer.exe</span></li>
+                <!--允许操作 阻止-->
+                <li>
+                    <span class="pop-tips">文件已为您备份，可进入<a href="###" class="pop-success-key">文件恢复区</a>进行恢复！</span>
+                </li>
+            </ul>
+        </div>
+        <div class="pop-footer cf">
+            <div class="pop-operation">
+                <a href="##" id="arrow" class="pop-btn">信任</a>
+                <a href="##" id="prevent" class="pop-btn">阻止 (30)</a>
+                <!--<div class="pop-dropdown">
+                    <a href="##" id="moreOperation" class="pop-btn">更多操作</a>
+                    <ul class="pop-dropdown-list" style="display: none;">
+                        <li>
+                            <a href="##" id="arrow-one" class="pop-dropdown-item">允许一次</a>
+                        </li>
+                        <li>
+                            <a href="##" id="arrow-always" class="pop-dropdown-item">始终允许</a>
+                        </li>
+                    </ul>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/pop-model.js" charset="UTF-8"></script>
+</body>
+
+</html>
